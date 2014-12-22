@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+    	<title>Concert Finder</title>
+    	<meta charset="utf-8" />
+    	<link href="popup.css" rel="stylesheet" />
+		<script src="popup.js" type="text/javascript"></script>
+	</head>
+	<body>
+	  	<h1 class="after">
+	  		Concert Suggestions:
+	  	</h1>
+	  	<h2 class="after">
+	  		Based on your current song choice
+	  	</h2>
+	  	<p id="error">
+	  		Invalid Entry.  Please enter a valid zip code.
+	  	</p>
+	  	<p id="zip">
+	  		Enter your zip code to find concerts near you: 
+	  		<input id="myzip" type="text" name="zip" />
+	  		<button id="zipentered" type="button">Submit</button>
+	  	</p>
+	  	<div id="concerts">
+	    </div>
+	    <div class="after" id="search">
+	    	Find concerts within
+	    	<select name=distances id="distances">
+	    		<option value="50">50</option>
+	    		<option selected="selected" value="100">100</option>
+	    		<option value="150">150</option>
+	    		<option value="500">500</option>
+	    		<option value="1000">1000</option>
+	    	</select>
+	    	miles from you
+	    </div>
+	    <div id="jambase">
+	    	<a href="http://www.JamBase.com" target="_top" title="JamBase Concert Search">
+			<img src= "http://images.jambase.com/logos/jambase140x70.gif" alt="Search JamBase Concerts" border="0" /></a>
+		</div>
+  </body>
+</html>
